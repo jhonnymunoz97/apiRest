@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('v1/users',UserController::class);
 
 Route::apiResource('v1/products',ProductsController::class);
-//Controlers
+
 
 Route::post('v1/upload64', function (Request $request) {
     $image = $request->imagen; // your base64 encoded
